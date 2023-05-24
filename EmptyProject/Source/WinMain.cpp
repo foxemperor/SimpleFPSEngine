@@ -38,7 +38,8 @@ LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wparam, LPARAM lp
 /* ------------------------------------------------------ */
 #pragma region Windows Operation
 /* - Где первый HINSTANCE - это hInstance, а второй HINSTANCE - это hPrevInstance, от которого мы избавились из-за отсутсвия поддержки в Windows 8 и выше - */
-int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
+/*
+INT CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
 	InitializeVariables();
 	CreateWindowClass();
@@ -47,7 +48,7 @@ int CALLBACK WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 
 	return 0;
 }
-
+*/
 /* - Класс закрытия программы после закрытия окна - */
 LRESULT CALLBACK WindowProcess(HWND hWnd, UINT message, WPARAM wparam, LPARAM lparam)
 {
